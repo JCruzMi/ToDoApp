@@ -1,7 +1,8 @@
 # ToDos_app
-```
-[logo]https://media.discordapp.net/attachments/628965557277818880/783036280622678026/unknown.png?width=625&height=453 "template"
 
+[Alt text](https://media.discordapp.net/attachments/628965557277818880/783036280622678026/unknown.png?width=625&height=453 "template")
+
+```
 To do list app with Vue without Vuex.
 I used setup, provide, ref, inject
 ```
@@ -18,7 +19,6 @@ npm run serve
 
 ### Made with
 ```
-
 Vue
 Javascript
 ```
