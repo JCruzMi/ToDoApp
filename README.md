@@ -1,4 +1,9 @@
-# todos_app
+# ToDos_app
+```
+
+To do list app with Vue without Vuex.
+I used setup, provide, ref, inject
+```
 
 ## Project setup
 ```
@@ -10,9 +15,35 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Made with
 ```
-npm run build
+
+Vue
+Javascript
+```
+
+# ToDos_app
+```
+
+Aplicación de lista de tareas con Vue sin Vuex.
+Usé setup, provide, ref, inject
+```
+
+## Configuración del proyecto
+```
+npm install
+```
+
+### Compila y recarga en caliente para desarrollo
+```
+npm ejecutar servir
+```
+
+### Hecho con
+```
+
+Vue
+Javascript
 ```
 
 ### Customize configuration
