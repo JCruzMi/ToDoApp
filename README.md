@@ -1,6 +1,6 @@
 # ToDos_app
 <p align="center">
-  <img src="https://media.discordapp.net/attachments/628965557277818880/783036280622678026/unknown.png?width=625&height=453" width="350">
+  <img src="https://media.discordapp.net/attachments/628965557277818880/783036280622678026/unknown.png?width=625&height=453" width="720">
 </p>
 
 ```
