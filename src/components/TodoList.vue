@@ -23,19 +23,22 @@
 </template>
 
 <script>
+//imports
 import { inject, ref, provide, computed } from 'vue'
-
+//imports componentes
 import TodoItem from './TodoItem.vue'
 import TodoFooter from './TodoFooter.vue'
 import TodoFiltro from './TodoFiltro.vue'
 
 export default {
   components: { TodoItem, TodoFooter, TodoFiltro },
+  //creacion de setup
   setup(){
+      //creacion constantes
       const todosTodos = inject('todos')
-
+      //constante estado que referencia a 'Todos' del filtro
       const estado = ref('Todos')
-
+      //funcion computed que retorna una lista filtrada por el estado de 'estado'
       const todos = computed(() => {
           if(estado.value === 'Todos'){
             return todosTodos.value
@@ -47,8 +50,9 @@ export default {
           }
 
       })
+      //proporciona el estado
       provide('estado', estado)
-
+      //retorna todos que se usa en el componente
       return {todos}
   }
 }

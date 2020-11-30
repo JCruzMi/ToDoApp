@@ -17,17 +17,21 @@
 </template>
 
 <script>
+//importacion de inject
 import { inject } from 'vue'
 
 export default {
+    //uso de prop todo que llega de TodoList
     props: ['todo'],
+    //creacion de setup
     setup(){
+        //creacion de constante 'todos' que referencia a la lista
         const todos = inject('todos')
-
+        //funcion para eliminar un 'todo' por id
         const eliminar = id => {
             todos.value = todos.value.filter(item => item.id !== id)
         }
-
+        //funcion que cambia el estado de un 'todo' y retorna todos los 'todo'
         const completado = id => {
             todos.value = todos.value.map(item => {
                 if(item.id === id){
@@ -36,7 +40,7 @@ export default {
                 return item
             })
         }
-
+        //return de eliminar y compeltado que se usan en el componente
         return { eliminar, completado }
     }
 }

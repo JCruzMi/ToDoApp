@@ -5,6 +5,7 @@
 </template>
 
 <script>
+//importaciones de componente principal
 import TodoApp from './components/TodoApp.vue'
 
 export default {

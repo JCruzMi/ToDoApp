@@ -1,5 +1,4 @@
 <template>
-
   <div class="card mt-3 bg-dark text-white mb-3">
       <div class="card-body d-flex justify-content-between align-items-center">
           <span role="button" @click="filtrar('Activas')" class="example">
@@ -17,15 +16,19 @@
 </template>
 
 <script>
+//import de inject
 import { inject } from 'vue'
 
 export default {
+    //creacion de setup
     setup(){
+        //constante estado que proviende de todo TodoList
         const estado = inject('estado')
-
+        //funcion filtrar, optiene un valot y lo añade a la constante estado
         const filtrar = valor =>{
             estado.value = valor
         }
+        //return de la funcion que se usa en el componente
         return {filtrar}
     }
 }
